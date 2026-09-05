@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photoshop-helper-2026"
+version = "0.1.0"
+description = "A Python-based utility designed for graphic designers and developers to streamline Adobe Photoshop workflows. It integrates with the Creative Cloud API to automate batch processing tasks such as resiz"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "matthall-x2092a5" }]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+photoshop_helper_2026 = "photoshop_helper_2026.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
